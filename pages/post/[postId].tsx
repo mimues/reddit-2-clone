@@ -106,7 +106,7 @@ function PostPage() {
           ?.map((comment) => {
             return {
               ...comment,
-              created_at: new Date(comment.created_at).getTime(),
+              created_at: new Date(comment?.created_at).getTime(),
             };
           })
           .sort((a, b) => b.created_at - a.created_at)
