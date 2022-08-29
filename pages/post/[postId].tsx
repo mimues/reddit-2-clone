@@ -104,14 +104,14 @@ function PostPage() {
 
 
         {post?.comments
+          // ?.map((comment: Comment) => {
+          //   return {
+          //     ...comment,
+          //     created_at: new Date(comment?.created_at).getTime(),
+          //   };
+          // })
+          // .sort((a, b) => b.created_at - a.created_at)
           ?.map((comment: Comment) => {
-            return {
-              ...comment,
-              created_at: new Date(comment?.created_at).getTime(),
-            };
-          })
-          .sort((a, b) => b.created_at - a.created_at)
-          ?.map((comment) => {
             return (
               <div
                 className="relative flex items-center space-x-2 space-y-5"
