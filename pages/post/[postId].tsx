@@ -103,13 +103,13 @@ function PostPage() {
         <hr className="py-1" />
 
         {post?.comments
-          ?.map((comment) => {
-            return {
-              ...comment,
-              created_at: new Date(comment?.created_at).getTime(),
-            };
-          })
-          .sort((a, b) => b.created_at - a.created_at)
+          // ?.map((comment) => {
+          //   return {
+          //     ...comment,
+          //     created_at: new Date(comment?.created_at).getTime(),
+          //   };
+          // })
+          // .sort((a, b) => b.created_at - a.created_at)
           ?.map((comment) => {
             return (
               <div
