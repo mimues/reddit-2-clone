@@ -102,7 +102,6 @@ function PostPage() {
       <div className="rounded-b-md border border-t-0 border-l-0 border-r-0 border-gray-300 bg-white p-5 pl-16 pt-0">
         <hr className="py-1" />
 
-
         {post?.comments
           // ?.map((comment: Comment) => {
           //   return {
