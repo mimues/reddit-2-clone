@@ -6,7 +6,7 @@ import {
   MenuIcon,
   SearchIcon,
   XIcon,
-  LogoutIcon
+  LogoutIcon,
 } from "@heroicons/react/solid";
 import {
   BellIcon,
@@ -29,9 +29,9 @@ function Header() {
   return (
     <div className="flex bg-white px-4 py-2 shadow-sm sticky top-0 z-30 items-center">
       <div className="relative h-10 w-20 flex-shrink-0 cursor-pointer">
-        <Link href='/'>
+        <Link href="/">
           <Image
-            src="https://links.papareact.com/fqy"
+            src="https://logos-download.com/wp-content/uploads/2016/06/Reddit_logo_full_1.png"
             layout="fill"
             objectFit="contain"
           />
@@ -72,7 +72,7 @@ function Header() {
         >
           <div className="relative h-5 w-5 flex-shrink-0">
             <Image
-              src="https://links.papareact.com/23l"
+              src="https://cdn-icons-png.flaticon.com/512/52/52053.png"
               alt="Sign Out Button"
               layout="fill"
             />
@@ -89,7 +89,7 @@ function Header() {
         >
           <div className="relative h-5 w-5 flex-shrink-0">
             <Image
-              src="https://links.papareact.com/23l"
+              src="https://cdn-icons-png.flaticon.com/512/52/52053.png"
               alt="Sign In Button"
               layout="fill"
             />
@@ -107,7 +107,7 @@ function Header() {
         )}
 
         {toggleMenu && (
-          <div className="flex z-20 justify-end items-end flex-col text-center py-1 absolute top-12 right-0 mt-1 border-r-6 scale min-w-max">
+          <div className="flex z-20 justify-end items-end flex-col text-center py-1 px-2 absolute top-12 -right-1.5 mt-1 scale min-w-max bg-white">
             <SparklesIcon className="icon" />
             <GlobeIcon className="icon" />
             <VideoCameraIcon className="icon" />
@@ -116,22 +116,10 @@ function Header() {
             <PlusIcon className="icon" />
             <SpeakerphoneIcon className="icon" />
             {session ? (
-              <div
+              <LogoutIcon
                 onClick={() => signOut()}
-                className="flex items-center space-x-2 border border-gray-100 cursor-pointer p-2 mt-1"
-              >
-                <div className="relative h-5 w-5 flex-shrink-0">
-                  <Image
-                    src="https://links.papareact.com/23l"
-                    alt="Sign Out Button"
-                    layout="fill"
-                  />
-                </div>
-                <div className="flex-1 text-xs">
-                  <p className="truncate">{session?.user?.name}</p>
-                </div>
-                <LogoutIcon className="h-5 flex-shrink-0 text-gray-400" />
-              </div>
+                className=" text-gray-400 icon"
+              />
             ) : (
               <div
                 onClick={() => signIn()}
@@ -139,7 +127,7 @@ function Header() {
               >
                 <div className="relative h-5 w-5 flex-shrink-0">
                   <Image
-                    src="https://links.papareact.com/23l"
+                    src="https://cdn-icons-png.flaticon.com/512/52/52053.png"
                     alt="Sign In Button"
                     layout="fill"
                   />
