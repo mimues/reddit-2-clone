@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import {
-  ChevronDownIcon,
-  HomeIcon,
   MenuIcon,
   SearchIcon,
   XIcon,
@@ -37,13 +35,8 @@ function Header() {
           />
         </Link>
       </div>
-      <div className="flex items-center mx-7 xl:min-w-[300px]">
-        <HomeIcon className="h-5 w-5" />
-        <p className="flex-1 ml-2 hidden lg:inline">Home</p>
-        <ChevronDownIcon className="h-5 w-5" />
-      </div>
       {/* Search box */}
-      <form className="flex flex-1 items-center space-x-2 border border-gray-200 rounded-sm bg-gray-100 px-3 py-1">
+      <form className="ml-7 flex flex-1 items-center space-x-2 border border-gray-200 rounded-sm bg-gray-100 px-3 py-1">
         <SearchIcon className="h-6 w-6 text-gray-400" />
         <input
           className="flex-1 bg-transparent outline-none"
@@ -107,7 +100,7 @@ function Header() {
         )}
 
         {toggleMenu && (
-          <div className="flex z-20 justify-end items-end flex-col text-center py-1 px-2 absolute top-12 -right-1.5 mt-1 scale min-w-max bg-white">
+          <div className="flex z-20 justify-end items-end flex-col text-center py-2 px-2 absolute top-12 -right-1.5 mt-1 scale min-w-max bg-white">
             <SparklesIcon className="icon" />
             <GlobeIcon className="icon" />
             <VideoCameraIcon className="icon" />

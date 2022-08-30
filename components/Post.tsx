@@ -1,4 +1,4 @@
-import React, { forwardRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   ArrowDownIcon,
@@ -77,12 +77,12 @@ function Post({ post }: Props) {
       0
     );
 
-    if (votes?.length === 0) return 0
+    if (votes?.length === 0) return 0;
     if (displayNumber === 0) {
-      return votes[0]?.upvote ? 1 : -1
+      return votes[0]?.upvote ? 1 : -1;
     }
 
-    return displayNumber
+    return displayNumber;
   };
 
   return (
