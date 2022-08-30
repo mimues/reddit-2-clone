@@ -1,4 +1,20 @@
-# Next.js + Tailwind CSS Example
+# Reddit 2 Clone
+Reddit 2.0 CLONE with REACT & NEXT.js, with the following builds:
+
+- GraphQL backend directly connected to your PostgreSQL Supabase database with Stepzen
+- Login authentication flow with the Reddit API using NextAuth
+- SQL relational database
+- Typescript
+- Next.js Server Side Rendering
+- Own API backend endpoints to communicate safely with the frontend!
+- Tailwind CSS and Responsive design
+- Deployed to Vercel
+
+## Check Out Deployed Application
+
+[https://reddit-2-clone-mimues.vercel.app/](https://reddit-2-clone-mimues.vercel.app/)
+
+## Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
